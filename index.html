@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Total Study Management System</title>
+		<link rel="stylesheet" type="text/css" href="css/Login.css">
+	</head>
+	<body>
+		<!--
+			구현해야하는 기능
+				1. 사용자 로그인
+				2. 스터디 관리 시스템
+					3.1. 해야하는 일 정리 (목록)
+					3.2. 해야하는 일 우선순위 선정
+					3.3. 해야하는 일 체크리스트 선정
+					3.4. 완료 시 자료 업로드 및 열람 기능
+				3. 멤버 관리 시스템
+					4.1. 스터디 멤버들의 현재 스터디 진행률
+					4.2. 과제 제출 및 확인
+					4.3. 현재 나의 성취율 확인
+			기술 스펙
+				DTD : HTML5
+				JS : ECMA 262
+				Lib : None
+				DB : Web Storage
+		 -->
+	 	<form name="login" action="javascript:Login()" class='register'>
+			<h1>Login</h1>
+			<input name="userName" placeholder='Name' type='text'>
+			<button type="submit">Login</button>
+		</form>
+		<script>
+			var Login = function() {
+				var login = document.login;
+				localStorage.setItem("user",login.userName.value);
+				document.location.href="mypage.html";
+			}
+		</script>
+	</body>
+</html>
