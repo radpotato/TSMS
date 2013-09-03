@@ -1,0 +1,16 @@
+main {}
+main header {}
+main div.content {}
+main div.content .present { }
+main div.content .present aside { }
+main div.content .present aside article { }
+main div.content .present aside div { }
+main div.content .present section { }
+main div.content > section { }
+main div.rating {position:fixed;left:-240px;top:0;padding:30px 70px;width:340px;height:100%;background:rgba(255,255,255,.3);-webkit-transition: 1s all ease-in;-moz-transition: 1s all ease-in;-o-transition: 1s all ease-in;-ms-transition: 1s all ease-in;transition: 1s all ease-in;}
+main div.rating:hover {left:0;background:rgba(255,255,255,.7);}
+main div.rating .rating-list {height:100%;}
+main div.rating .rating-list h1 {text-align: center; color:#666; padding-top:12px; margin-bottom:15px;}
+main div.rating .rating-list ul { padding:0; margin:0; height:90%; overflow-y: scroll;}
+main div.rating .rating-list ul li { padding:7px 15px; list-style:none; border-bottom:1px solid rgba(0,0,0,.1); color:#666;}
+main div.rating .rating-list ul li input[type="checkbox"] {vertical-align: top}
